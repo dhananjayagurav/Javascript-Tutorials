@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> Javascript If-Else loops </title>
+	</head>
+	
+	<body>
+		<div>
+		Magic Word <input type="text" id="magicInput">
+		<input type="submit" id="magicButton">
+		
+		</div>
+		<script type="text/javascript">
+			var magicWord = "AabraKaDabra";
+			document.getElementById("magicButton").onclick = function () {
+				var userText = "";
+				userText = document.getElementById("magicInput").value;
+				
+				if (userText == magicWord) {
+					alert ("You have nailed it man !!");
+				} else {
+					alert ("Alas .... Try again !!");
+				}
+			}
+		</script>
+	</body>
+</html>
