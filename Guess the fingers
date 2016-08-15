@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> Guess The Finger Game </title>
+	</head>
+	
+	<body>
+		<p> <h2> How many fingers am I holding up? </h2> </p>
+		<p> <input type="text" id="textGuess" placeholder = "Max 5 fingers :)"> 
+		<input type="submit" id="buttonGuess" value="Guess!"> 
+		</p>
+		<script type = "text/javascript">
+						
+			document.getElementById("buttonGuess").onclick = function () {
+				var randNum = Math.floor((Math.random() * 5) + 1);
+				//alert (randNum);
+				var userGuess = document.getElementById("textGuess").value;
+				//alert (userGuess);
+				
+				if (randNum == userGuess) {
+					alert ("Bang on !! Fantastic!!");
+				} else {
+					alert ("Alas .... Try again !!");
+				}
+				document.getElementById("textGuess").value = '';
+			}
+			
+			
+		</script>
+	</body>
+</html>
