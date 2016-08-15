@@ -5,4 +5,6 @@ This repo contains javascripts excersises. Concepts covered are -
   3. Javascript variables, arrays
   4. If-else loops
   5. Iterations
-  6. Few interesting games developed using above concepts
+  6. Functions
+  7. External JS
+  8. Few interesting games developed using above concepts
