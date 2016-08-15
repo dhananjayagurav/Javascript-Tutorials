@@ -1,2 +1,2 @@
 # Javascript-Tutorials
-This repo contains the javvascripts excersises
+This repo contains javascripts excersises
