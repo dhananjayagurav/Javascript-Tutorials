@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title> Javascript Loops </title>
+	</head>
+	
+	<body>
+		<p> <h2> Guess the number of sticks in a bundle? </h2> <p>
+		<p> <select id="myText" length="20Px">
+  				<option> 1 </option>
+  				<option> 2 </option>
+  				<option> 3 </option>
+  				<option> 4 </option>
+  				<option> 6 </option>
+  				<option> 7 </option>
+  				<option> 8 </option>
+  				<option> 9 </option>
+  				<option> 10 </option>
+				</select>
+			<input type="submit" id="myButton">
+		</p>
+		<script type="text/javascript">
+			var userNum = ""
+			var sysNum = ""
+			
+			document.getElementById("myButton").onclick = function () {
+				userNum = document.getElementById("myText").value;
+				//alert(userNum);
+				var i=0;
+				
+				while (userNum != sysNum) {
+					sysNum = Math.floor((Math.random() * 10) + 1);
+					i++;
+				}
+				alert ("System took " + i + " iterations to guess correct sticks in a bundle");
+			}	
+			
+		</script>
+	</body>
+</html>
